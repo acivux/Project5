@@ -12,7 +12,6 @@
 * http://www.postgresql.org/docs/9.3/static/index.html
 * https://git-scm.com/download/linux
 
-
 # Steps taken to set up the server
 ## Add user 'grader'
 * create user: `adduser grader`
