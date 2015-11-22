@@ -6,11 +6,11 @@
 * Website url: http://52.33.147.216/
 
 ## Project Sources
-https://discussions.udacity.com/t/project-5-resources/28343
-https://pypi.python.org/pypi/Glances
-https://httpd.apache.org/
-http://www.postgresql.org/docs/9.3/static/index.html
-https://git-scm.com/download/linux
+* https://discussions.udacity.com/t/project-5-resources/28343
+* https://pypi.python.org/pypi/Glances
+* https://httpd.apache.org/
+* http://www.postgresql.org/docs/9.3/static/index.html
+* https://git-scm.com/download/linux
 
 
 # Steps taken to set up the server
