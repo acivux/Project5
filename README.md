@@ -34,6 +34,23 @@
 * Select `None of the above`, press enter.
 * Select `UTC``, press enter.
 
+## ntpd service
+The ntpd calculates clock drift to prevent large corrections when the system time is updated.
+To install: `sudo apt-get install ntp`
+To start the service: `sudo service ntp start`
+To inspect the status: `sudo ntpq -p`
+
+## Update clock daily
+Keeping the system clock updated on a daily basis, we make use of the built in cron functionality of Ubuntu.
+* Create file in /etc/cron.daily/ntpdate:
+```
+#!/bin/sh
+ntpdate ntp.ubuntu.com`
+```
+
+* Using the command line, make the file executable: `sudo chmod 755 /etc/cron.daily/ntpdate`
+
+
 ## Update all installed packages
 * `sudo apt-get update`
 * `sudo apt-get upgrade`
