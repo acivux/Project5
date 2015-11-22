@@ -35,21 +35,20 @@
 * Select `UTC``, press enter.
 
 ## ntpd service
-The ntpd calculates clock drift to prevent large corrections when the system time is updated.
-To install: `sudo apt-get install ntp`
-To start the service: `sudo service ntp start`
-To inspect the status: `sudo ntpq -p`
+The ntpd service calculates clock drift to prevent large corrections when the system time is updated.
+* To install: `sudo apt-get install ntp`
+* To start the service: `sudo service ntp start`
+* To inspect the status: `sudo ntpq -p`
 
 ## Update clock daily
 Keeping the system clock updated on a daily basis, we make use of the built in cron functionality of Ubuntu.
-* Create file in /etc/cron.daily/ntpdate:
+* Create file:  `sudo nano /etc/cron.daily/ntpdate`, and add this content:
 ```
 #!/bin/sh
 ntpdate ntp.ubuntu.com`
 ```
 
 * Using the command line, make the file executable: `sudo chmod 755 /etc/cron.daily/ntpdate`
-
 
 ## Update all installed packages
 * `sudo apt-get update`
@@ -110,6 +109,12 @@ from application import app as application
 * Remove all other user rights
     * `psql -U postgres -d catalog -c "REVOKE ALL ON SCHEMA public FROM public;"`
     * `psql -U postgres -d catalog -c "GRANT ALL ON SCHEMA public TO catalog;"`
+
+## System monitoring
+Glances is a Python application which gives robust feedback on system status in the terminal.
+
+* To Install : `sudo pip install glances`
+* To Run: `glances`
 
 # Sources
 https://discussions.udacity.com/t/project-5-resources/28343
