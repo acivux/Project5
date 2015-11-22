@@ -1,5 +1,19 @@
 # Project5
 
+## Server details
+* IP address: 52.33.147.216
+* ssh port: 2200
+* Website url: http://52.33.147.216/
+
+## Project Sources
+https://discussions.udacity.com/t/project-5-resources/28343
+https://pypi.python.org/pypi/Glances
+https://httpd.apache.org/
+http://www.postgresql.org/docs/9.3/static/index.html
+https://git-scm.com/download/linux
+
+
+# Steps taken to set up the server
 ## Add user 'grader'
 * create user: `adduser grader`
 * Create sudo access file for grader: `sudo nano /etc/sudoers.d/grader`
@@ -115,6 +129,3 @@ Glances is a Python application which gives robust feedback on system status in 
 
 * To Install : `sudo pip install glances`
 * To Run: `glances`
-
-# Sources
-https://discussions.udacity.com/t/project-5-resources/28343
